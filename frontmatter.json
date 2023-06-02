@@ -29,6 +29,11 @@
           "type": "image"
         },
         {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
           "title": "Tags",
           "name": "tags",
           "type": "tags"
@@ -39,14 +44,56 @@
           "type": "categories"
         },
         {
-          "title": "icon",
-          "name": "icon",
-          "type": "string"
+          "title": "slug",
+          "name": "slug",
+          "type": "datetime"
         },
         {
-          "title": "order",
-          "name": "order",
-          "type": "number"
+          "title": "pin",
+          "name": "pin",
+          "type": "datetime"
+        },
+        {
+          "title": "math",
+          "name": "math",
+          "type": "datetime"
+        },
+        {
+          "title": "mermaid",
+          "name": "mermaid",
+          "type": "datetime"
+        },
+        {
+          "title": "image",
+          "name": "image",
+          "type": "fields",
+          "fields": [
+            {
+              "title": "path",
+              "name": "path",
+              "type": "string"
+            },
+            {
+              "title": "lqip",
+              "name": "lqip",
+              "type": "datetime"
+            }
+          ]
+        },
+        {
+          "title": "keywords",
+          "name": "keywords",
+          "type": "choice",
+          "choices": [
+            "AI",
+            "DevOps",
+            "PowerShell"
+          ]
+        },
+        {
+          "title": "img_path",
+          "name": "img_path",
+          "type": "datetime"
         }
       ]
     }
@@ -56,10 +103,6 @@
   "frontMatter.preview.host": "http://localhost:4000",
   "frontMatter.content.pageFolders": [
     {
-      "path": "[[workspace]]",
-      "title": "[[workspace]]"
-    },
-    {
       "title": "Posts",
       "path": "[[workspace]]/_posts"
     },
@@ -68,11 +111,23 @@
       "path": "[[workspace]]/_tabs"
     },
     {
-      "title": "Assets",
-      "path": "[[workspace]]/assets"
+      "title": "_posts",
+      "path": "[[workspace]]/_posts"
     }
   ],
-  "frontMatter.taxonomy.tags": [],
-  "frontMatter.taxonomy.categories": [],
-  "frontMatter.dashboard.openOnStart": true
+  "frontMatter.taxonomy.tags": [
+    "AI",
+    "Automation",
+    "Azure DevOps",
+    "DevOps",
+    "GPT",
+    "OpenAI",
+    "PowerShell",
+    "me"
+  ],
+  "frontMatter.taxonomy.categories": [
+    "AI",
+    "Automation",
+    "Personal"
+  ]
 }
